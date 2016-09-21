@@ -49,7 +49,7 @@ type (
 var (
 	// DefaultLoggerConfig is the default logger middleware config.
 	DefaultLoggerConfig = LoggerConfig{
-		Format: `${remote_ip} - - "${method} ${url}" ${status} ${tx_bytes} ` +
+		Format: `${remote_ip} - - "${method} ${uri}" ${status} ${tx_bytes} ` +
 			`${referer} ${user_agent}` + "\n",
 	}
 )
